@@ -1,0 +1,83 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body{
+    font-family: "Montserrat", sans-serif;
+    
+}
+a {
+    line-height: 1.8;
+}
+.what-title {
+    text-transform: lowercase;
+}
+.shadow {
+    text-shadow: 2px 4px 5px red;
+}
+.center{
+    text-align: center;
+}
+.what-desc {
+    text-decoration: dotted;
+}
+.bold {
+    font-weight: 900;
+    font-size: 18;
+}
+.green {
+    color: green;
+}
+
+.how-title {
+    text-transform: capitalize;
+    font-size: 78px;
+
+}
+
+.blok-1 {
+    text-align: right;
+}
+
+.how-desc {
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+}
+
+.blok-2 {
+    text-align: justify;
+}
+.blok-3 {
+    text-align: left;
+}
+.why-title {
+    text-decoration: overline;
+    text-decoration-color: blueviolet;
+    text-decoration: dashed;
+
+}
+
+.why-list-item {
+    text-decoration: none;
+}
+.upper {
+    text-transform: uppercase;
+}
+.why-blok-2 {
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.why-subtitle-2 {
+    font-size: 45px;
+}
+.future-title {
+    letter-spacing: 5px;
+}
+.future-desc {
+    word-spacing: nowrap;
+}
+.under {
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+

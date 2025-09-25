@@ -1,0 +1,37 @@
+@import url("reset.css");
+
+#header {
+    color: green;
+}
+
+.geo span {
+    color: red;
+}
+
+blockquote,
+.green {
+    color: green;
+}
+
+.history_title+p {
+    color: red;
+}
+
+
+.list~p {
+    color: green;
+}
+
+
+
+.list>.item {
+    color: green;
+}
+
+a[target="_blank"] {
+    color: green;
+}
+
+a[href="#geography"] {
+    color: red;
+}
