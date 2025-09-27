@@ -1,86 +1,82 @@
 @import url("reset.css");
 @import url("fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body{
-    font-family: "Montserrat", sans-serif;
-    
+body {
+  font-family: "Montserrat", sans-serif;
 }
 a {
-    line-height: 1.8;
+  line-height: 1.8;
 }
 .what-title {
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 .shadow {
-    text-shadow: 2px 4px 5px red;
+  text-shadow: 2px 4px 5px red;
 }
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
 .what-desc {
-    text-decoration: dotted;
+  font-family: "Lato", sans-serif;
+  text-decoration: dotted;
 }
 .bold {
-    font-weight: 900;
-    font-size: 18;
+  font-weight: 900;
+  font-size: 18px;
 }
 .green {
-    color: green;
+  color: green;
 }
 
 .how-title {
-    text-transform: capitalize;
-    font-size: 78px;
-
+  text-transform: capitalize;
+  font-size: 78px;
 }
 
 .blok-1 {
-    text-align: right;
+  text-align: right;
 }
 
 .how-desc {
-    text-decoration: line-through;
-    text-decoration-style: wavy;
+  text-decoration: line-through;
+  text-decoration-style: wavy;
 }
 
 .blok-2 {
-    text-align: justify;
+  text-align: justify;
 }
 .blok-3 {
-    text-align: left;
-    font-family: "Lato", sans-serif;
+  text-align: left;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
   font-style: italic;
 }
 .why-title {
-    text-decoration: overline;
-    text-decoration-color: blueviolet;
-    text-decoration: dashed;
-
+  text-decoration: overline;
+  text-decoration-color: blueviolet;
+  text-decoration: dashed;
 }
 
 .why-list-item {
-    text-decoration: none;
+  text-decoration: none;
 }
 .upper {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .why-blok-2 {
-    font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Lato", sans-serif;
 }
 .why-subtitle-2 {
-    font-size: 45px;
+  font-size: 45px;
 }
 .future-title {
-    letter-spacing: 5px;
+  letter-spacing: 5px;
 }
 .future-desc {
-    word-spacing: nowrap;
+  word-spacing: 1rem;
 }
 .under {
-    text-decoration: underline;
-    text-decoration-style: double;
+  text-decoration: underline;
+  text-decoration-style: double;
 }
-
