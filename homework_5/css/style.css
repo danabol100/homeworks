@@ -1,0 +1,61 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+  font-family: Lato, sans-serif;
+  line-height: 1.25;
+}
+.header {
+  margin-bottom: 82px;
+}
+.header-desc {
+  text-align: center;
+}
+.why {
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+.why_title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 72px;
+  text-align: center;
+  color: #2f302c;
+}
+.why_wrapper {
+}
+.blok_cards {
+  font-size: 0;
+  margin-left: -34px;
+  margin-right: -34px;
+}
+.card {
+  margin-bottom: 68px;
+  padding-left: 34px;
+  padding-right: 34px;
+  display: inline-block;
+  width: 33.333%;
+  /* max-width: 348px; */
+  text-align: center;
+}
+.card-img {
+  margin-bottom: 24px;
+}
+.card-title {
+  margin-bottom: 24px;
+  font-size: 16px; /*Знаю що 16 за замовчуванням але жоско прописав */
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2f302c;
+}
+.card-desc {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7e7f7c;
+}
+.footer-text {
+  text-align: center;
+}
