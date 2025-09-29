@@ -42,6 +42,8 @@ body {
   text-align: center;
 }
 .card-img {
+  width: 55px;
+  height: 55px;
   margin-bottom: 24px;
 }
 .card-title {
