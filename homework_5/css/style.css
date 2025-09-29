@@ -25,8 +25,7 @@ body {
   text-align: center;
   color: #2f302c;
 }
-.why_wrapper {
-}
+
 .blok_cards {
   font-size: 0;
   margin-left: -34px;
@@ -38,6 +37,7 @@ body {
   padding-right: 34px;
   display: inline-block;
   width: 33.333%;
+  vertical-align: top;
   /* max-width: 348px; */
   text-align: center;
 }
