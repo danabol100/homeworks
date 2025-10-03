@@ -1,0 +1,212 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("task.css");
+@import url("task2.css");
+
+header>p{
+  text-align: center;
+  font-size: 32px;
+}
+
+.handmate {
+  text-align: center;
+  margin: 20px 0 100px 0;
+}
+.tettis {
+  margin: 0 auto;
+  width: 500px;
+  height: 1000px;
+  background-color: #FFD700;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+              inset -1px -1px 3px rgba(255,255,255,0.3);
+}
+.tetris-wrap {
+}
+.tetris-name {
+  margin: 0 auto;
+  padding: 10px;
+  background: url("../img/logo.png") center 30px no-repeat;
+  background-size: 30px 30px;
+  width: 100px;
+  height: 100px;
+}
+.tetris-screen {
+  margin: 0 auto 100px auto;
+  width: 300px;
+  height: 400px;
+  background-color: #3A5F0B;
+  outline: 20px solid #b99e04;
+  box-shadow: 0 0 36px rgba(155,188,15,0.25), inset 0 0 12px rgba(0,0,0,0.4);
+}
+
+.tetris-score{
+  text-align: right;
+  padding-right: 17px;
+  padding-top: 5px;
+}
+.tetris-blok-21{
+  margin-top: 106px;
+  margin-left: 262px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(16, 16, 16);
+  background-color: #3A5F0B;
+  padding: 1px;
+}
+.tetris-blok-22,
+.tetris-blok-23,
+.tetris-blok-24{
+  margin-left: 262px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(16, 16, 16);
+  background-color: #3A5F0B;
+  padding: 1px;
+}
+.tetris-small-screen{
+  margin: -196px 0 0 3px;
+  width: 230px;
+  height: 380px;
+  border: 1px solid black;
+}
+.tetris-blok-1{
+ 
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(16, 16, 16);
+  background-color: #3A5F0B;
+  padding: 1px;
+}
+.tetris-blok-2{
+  
+  margin-left: 30px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(16, 16, 16);
+  background-color: #3A5F0B;
+  padding: 1px;
+}
+
+.tetris-blok-11{
+  margin-top:-40px;
+  margin-left: 48px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(16, 16, 16);
+  background-color: #3A5F0B;
+  padding: 1px;
+}
+.tetris-blok-12{
+  margin-top: 1px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(16, 16, 16);
+  background-color: #3A5F0B;
+  padding: 1px;
+}
+
+.tetris-blok1{
+  margin-top: 221px;
+  margin-left: 60px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(16, 16, 16);
+  background-color: #3A5F0B;
+  padding: 1px;
+  
+}
+.min-blok{
+  background-color: rgb(16, 16, 16);
+  width: 16px;
+  height: 16px;
+}
+.tetris-blok2
+,.tetris-blok3,
+.tetris-blok4{
+  margin-left: 60px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(16, 16, 16);
+  background-color: #3A5F0B;
+  padding: 1px;
+  
+}
+.first-row {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.activ-block {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.bottom{
+  width: 20px;
+  height: 20px;
+  background-color: #FFD700;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  border-top: 1px solid rgb(21, 21, 20);
+  border-left: 1px solid rgb(21, 21, 20);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+              inset -1px -1px 3px rgba(255,255,255,0.3);
+}
+.bottom-text{
+  margin-bottom: 5px;
+}
+
+.second-row {
+  margin: 0 0 0 50px;
+  text-align: start;
+}
+.active-panel {
+  
+  display: inline-block;
+}
+.big-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #FFD700;
+  border-radius: 50%;
+  cursor: pointer;
+  border-top: 1px solid rgb(21, 21, 20);
+  border-left: 1px solid rgb(21, 21, 20);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+              inset -1px -1px 3px rgba(255,255,255,0.3);
+}
+.btn-desc {
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.up{
+  margin: 0 0 66px 0;
+}
+.down{
+  margin: -15px 0 0 -244px;
+}
+.main-bottom {
+  margin: -126px 81px 0 330px;
+}
+.bigger-btn {
+  width: 80px;
+  height: 80px;
+  background-color: #FFD700;
+  border-radius: 50%;
+  cursor: pointer;
+  border-top: 1px solid rgb(21, 21, 20);
+  border-left: 1px solid rgb(21, 21, 20);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+              inset -1px -1px 3px rgba(255,255,255,0.3);
+}
+
+footer>p{
+  font-size: 24px;
+  text-align: center;
+}
