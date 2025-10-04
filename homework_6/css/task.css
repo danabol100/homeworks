@@ -2,6 +2,8 @@
   height: 694px;
 }
 .hero {
+  padding-top: 114px;
+  padding-bottom: 110px;
   background: url("../img/Rectangle1.png") no-repeat center center;
   background-size: cover;
   height: 612px;
@@ -12,7 +14,7 @@
   max-width: 1392px;
 }
 .hero-wrap {
-  padding: 114px 145px 110px 15px;
+  padding: 0px 145px 0px 15px;
 }
 .hero-text-content {
   text-align: start;
