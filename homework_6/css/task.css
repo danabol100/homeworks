@@ -1,61 +1,55 @@
-
-
 .task {
-    
-    height: 694px;
+  height: 694px;
 }
 .hero {
-    background: url("../img/Rectangle1.png") no-repeat center center;
-    background-size: cover;
-    height: 612px;
-    color: #2F302C;
-    
+  background: url("../img/Rectangle1.png") no-repeat center center;
+  background-size: cover;
+  height: 612px;
+  color: #2f302c;
 }
 .container {
-    margin: 0 auto;
-    max-width: 1392px;
+  margin: 0 auto;
+  max-width: 1392px;
 }
 .hero-wrap {
-    
+  padding: 114px 130px 0 0;
 }
 .hero-text-content {
-    margin:  0 0 0 750px;
-    text-align: start;
-    max-width: 520px;
-    padding-top: 114px;
-
+  text-align: start;
+  max-width: 520px;
+  margin-left: auto;
 }
 .hero-sub {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    line-height: 1.4;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
 }
 .hero-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 96px;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 96px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 .extra {
-    font-weight: 800;
+  font-weight: 800;
 }
 .bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 .hero-hr {
-    margin-left: 8px;
-    margin-bottom: 36px;
-    width: 308px;
-    height: 1px;
-    background-color: #2F302C;
+  margin-left: 8px;
+  margin-bottom: 36px;
+  width: 308px;
+  height: 1px;
+  background-color: #2f302c;
 }
 .hero-desc {
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    color: #7E7F7C;
-    max-width: 374px;
-    line-height: 1.25;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #7e7f7c;
+  max-width: 374px;
+  line-height: 1.25;
 }
