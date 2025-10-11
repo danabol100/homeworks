@@ -1,0 +1,44 @@
+.task2 {
+  margin: 0 0 100px 100px;
+}
+.card {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #252b42;
+}
+.card-list {
+}
+.card-item {
+  margin-top: 10px;
+  min-height: 32px;
+  line-height: 2.3;
+  letter-spacing: 0.2px;
+}
+.card-item::before {
+  content: "";
+  background: url("../img/check.png") center no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.card-item:nth-last-child(-n + 2)::before {
+  content: "";
+  background: url("../img/check-grey.png") center no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/* .grey::before {
+  content: "";
+  background: url("../img/check-grey.png") center no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+} */
