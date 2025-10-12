@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework 7</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <img src="img/logo.svg" alt="Logo shanti">
+            <p>SVG LOGO</p>
+        </div>
+    </header>
+    <main>
+        <div class="main__container">
+
+            <div class="main__blok">
+                <p>Transform from PNG (259KB) to WEBP(16KB) </p>
+                <img src="img/first.webp"
+                    alt="A woman in a tan sports bra and leggings performs a yoga pose on a mat in a serene indoor setting">
+            </div>
+            <div class="main__blok">
+                <p>The coolest option for optimization and best quality (doesn't work in Safari)</p>
+                <img srcset="img/second-x2.png 2x, img/second-x3.png 3x" src="img/second.png"
+                    alt=" A woman practicing yoga, positioned with her hands on her head in a meditative pose">
+            </div>
+            <div class="main__blok">
+                <p>The coolest option for optimization and best quality (work in Safari)</p>
+                <picture>
+                    <source srcset="img/third.png 1x, img/third-x2.png 2x, img/third-3.png 3x">
+                    <img src="img/third.png"
+                        alt="A woman performing yoga in a cozy room, emphasizing relaxation and mindfulness through her practice">
+                </picture>
+            </div>
+            <div class="main__blok">
+                <p>Transform from PNG(134KB) to JPEG(33KB)</p>
+                <img src="img/four.jpg"
+                    alt="A woman performing yoga in a tranquil room, emphasizing relaxation and mindfulness through her movements">
+            </div>
+            <div class="main__blok">
+                <p>SVG icon</p>
+                <div class="before"><span>Use icon Arrow like pseudo-element</span></div>
+                <p>SVG decor</p>
+                <img src="img/group.svg" alt="circle icon">
+                <img src="img/element-1.svg" alt="right-arrow icon">
+                <img src="img/element-2.svg" alt="right-arrow icon">
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <p>F@@TER</p>
+        </div>
+    </footer>
+</body>
+
+</html>
