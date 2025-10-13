@@ -1,0 +1,23 @@
+.task2 {
+   margin: 0 0 100px 100px;
+}
+.card {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #252B42;
+}
+.card-list {
+}
+.card-item {
+    /* padding-top: 5px; */
+    padding-left: 40px;
+    margin-bottom: 19px;
+	min-height: 32px;
+    line-height: 2.3;
+    letter-spacing: 0.2px;
+    background: url("../img/check.png") 0 0 no-repeat;
+}
+.grey{
+    background: url("../img/check-grey.png") 0 0 no-repeat;
+}
