@@ -17,17 +17,10 @@
   vertical-align: middle;
 }
 
-.header__wrapper {
-}
 .header__logo {
   margin-right: 80px;
 }
-.header__nav {
-}
-.nav {
-}
-.nav__items {
-}
+
 .nav__search {
   min-width: 264px;
   white-space: nowrap;
@@ -56,12 +49,7 @@
 .nav__item {
   margin-right: 44px;
 }
-.nav__link-item {
-}
-.nav__actions {
-}
+
 .nav__like {
   margin-right: 44px;
-}
-.nav__cart {
 }

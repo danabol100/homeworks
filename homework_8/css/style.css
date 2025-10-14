@@ -15,8 +15,10 @@ main {
 header img {
   vertical-align: middle;
 }
+header img {
+  margin-right: 100px;
+}
 header p {
-  margin-left: 100px;
   display: inline;
   color: blueviolet;
 }
@@ -53,10 +55,12 @@ main p {
 }
 
 .main__blok {
-  margin-bottom: 50px;
   border-radius: 10px;
   background-color: lightsteelblue;
   padding: 15px;
+}
+.main__blok:not(:last-of-type) {
+  margin-bottom: 50px;
 }
 .main__wrapper > .main__blok:nth-of-type(2n) {
   background-color: #d5cbc1;
