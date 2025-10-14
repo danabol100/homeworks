@@ -3,14 +3,13 @@
   padding-bottom: 110px;
   background: url("../img/Rectangle1.png") no-repeat center center #d9d9d9;
   background-size: cover;
-  height: 612px;
   color: #2f302c;
+  margin-bottom: 100px;
 }
 
 .hero__text-content {
   max-width: 650px;
   margin-left: auto;
-
   font-family: Lato, sans-serif;
   color: #2f302c;
 }
@@ -24,12 +23,10 @@
   height: 1px;
   max-width: 308px;
   margin-bottom: 36px;
-
   background-color: #2f302c;
 }
 .hero__sub-title {
   margin-bottom: 20px;
-
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
@@ -37,7 +34,6 @@
 
 .hero__title {
   margin-bottom: 16px;
-
   font-family: Montserrat, sans-serif;
   font-size: 96px;
   font-weight: 700;

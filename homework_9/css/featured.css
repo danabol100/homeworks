@@ -1,0 +1,25 @@
+.featured {
+  margin-bottom: 100px;
+}
+
+.featured__wrapper {
+  display: flex;
+  gap: 36px;
+}
+.featured__card {
+  background-color: #f7f7f7;
+  max-width: 321px;
+}
+.card {
+}
+.card__img {
+}
+.card__text-content {
+}
+.card__link {
+}
+.featured__card--middle {
+  max-width: 678px;
+  background-color: #e6efea;
+  text-align: center;
+}
