@@ -8,9 +8,9 @@
 .header__logo,
 .header__nav,
 .nav__search,
-.nav__sections,
-.nav__actions,
-.nav__like,
+.nav__list,
+.nav__actions-list,
+.nav__item-action,
 .nav__cart,
 .nav__item {
   display: inline-block;
@@ -43,13 +43,13 @@
   width: 20px;
   height: 20px;
 }
-.nav__sections {
+.nav__list {
   margin-right: 169px;
 }
 .nav__item {
   margin-right: 44px;
 }
 
-.nav__like {
+.nav__item-action {
   margin-right: 44px;
 }

@@ -5,7 +5,9 @@
 .task1 {
   background-color: rgb(69, 26, 209);
 }
-
+.header {
+  margin-bottom: 100px;
+}
 .header p {
   text-align: center;
   font-size: 30px;
@@ -18,7 +20,6 @@
   font-size: 30px;
   color: rgb(216, 182, 182);
   margin-left: 80px;
-  margin-bottom: 100px;
   background-color: rgb(69, 26, 209);
 }
 
@@ -45,56 +46,47 @@
 .block-2 {
   width: 50px;
   height: 200px;
-  background-color: aliceblue;
   margin-left: 510px;
   margin-top: -17px;
 }
 .block-3 {
   width: 200px;
   height: 50px;
-  background-color: aliceblue;
   margin-left: 510px;
 }
 .block-4 {
   width: 20px;
   height: 100px;
-  background-color: aliceblue;
   margin-left: 690px;
 }
 .block-5 {
   width: 100px;
   height: 10px;
-  background-color: aliceblue;
   margin-left: 610px;
 }
 .block-6 {
   width: 10px;
   height: 100px;
-  background-color: aliceblue;
   margin-left: 610px;
 }
 .block-7 {
   width: 200px;
   height: 10px;
-  background-color: aliceblue;
   margin-left: 420px;
 }
 .block-8 {
   width: 20px;
   height: 100px;
-  background-color: aliceblue;
   margin-left: 420px;
 }
 .block-9 {
   width: 250px;
   height: 10px;
-  background-color: aliceblue;
   margin-left: 420px;
 }
 .block-10 {
   width: 40px;
   height: 40px;
-  background-color: aliceblue;
   margin-left: 665px;
   margin-top: -27px;
 }
@@ -111,42 +103,12 @@
 [class*="block-"]:not(.block-1, .block-11) {
   visibility: hidden;
 }
-.block-1:hover + .block-2,
-.block-2:hover {
+.block:hover + .block,
+.block:hover {
   visibility: visible;
+  background-color: aliceblue;
 }
-.block-2:hover + .block-3,
-.block-3:hover {
-  visibility: visible;
-}
-.block-3:hover + .block-4,
-.block-4:hover {
-  visibility: visible;
-}
-.block-4:hover + .block-5,
-.block-5:hover {
-  visibility: visible;
-}
-.block-5:hover + .block-6,
-.block-6:hover {
-  visibility: visible;
-}
-.block-6:hover + .block-7,
-.block-7:hover {
-  visibility: visible;
-}
-.block-7:hover + .block-8,
-.block-8:hover {
-  visibility: visible;
-}
-.block-8:hover + .block-9,
-.block-9:hover {
-  visibility: visible;
-}
-.block-9:hover + .block-10,
-.block-10:hover {
-  visibility: visible;
-}
+
 .block-10:hover + .block-11 {
   background: url("../img/win.jpg") center/cover no-repeat;
   width: 300px;

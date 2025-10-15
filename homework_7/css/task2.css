@@ -10,9 +10,9 @@
 .card-list {
 }
 .card-item {
-  margin-top: 10px;
+  margin-bottom: 10px;
   min-height: 32px;
-  line-height: 2.3;
+  line-height: 1.71;
   letter-spacing: 0.2px;
 }
 .card-item::before {
@@ -21,8 +21,9 @@
   width: 32px;
   height: 32px;
   display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
+  margin-left: -42px; /* ← подвигаем иконку влево, в зону padding'а */
+  margin-right: 10px; /* небольшой зазор между иконкой и текстом */
+  vertical-align: top;
 }
 .card-item:nth-last-child(-n + 2)::before {
   content: "";
@@ -30,8 +31,6 @@
   width: 32px;
   height: 32px;
   display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
 }
 /* .grey::before {
   content: "";
