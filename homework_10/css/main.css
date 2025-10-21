@@ -144,4 +144,9 @@
 .footer {
   background-color: rgb(105, 107, 106);
   text-align: center;
+  color: #ffffff;
+}
+.footer > p {
+  /* font-size: 30px;
+  color: azure; */
 }
