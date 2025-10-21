@@ -1,21 +1,31 @@
 .card {
+  background-color: #ffffff;
   font-family: "Playfair Display", sans-serif;
-  color: #ffffff;
-  margin-bottom: 100px;
+  padding: 50px 0 50px 0;
+  margin-bottom: 77px;
+  color: #000000;
+}
+.card__wrapper {
+  margin-bottom: 77px;
+  font-size: 0;
 }
 .card__title {
   text-align: center;
   margin-bottom: 50px;
+  font-size: 27px;
 }
 .card__body {
   display: inline-block;
   position: relative;
   overflow: hidden;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  max-width: 250px;
+  /* max-width: 251px; */
+  max-width: 25.066%;
+  font-size: 0;
 }
 .card__body:not(:last-child) {
-  margin-right: 120px;
+  /* margin-right: 123px; */
+  margin-right: 12.4%;
 }
 .card__name {
   position: absolute;
@@ -45,6 +55,21 @@
 }
 .card__body:hover .card__link {
   opacity: 1;
+}
+.card__btn {
+  display: block;
+  text-align: center;
+  width: 133px;
+  height: 40px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border: 1px solid #000000;
+}
+.card__btn > a {
+  font-size: 14px;
+  color: #000000;
+  vertical-align: middle;
+  line-height: 40px;
 }
 
 .list {
