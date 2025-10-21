@@ -1,0 +1,122 @@
+.card {
+  font-family: "Playfair Display", sans-serif;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+.card__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.card__body {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  max-width: 250px;
+}
+.card__body:not(:last-child) {
+  margin-right: 120px;
+}
+.card__name {
+  position: absolute;
+  white-space: nowrap;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display", sans-serif;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.card__body:hover .card__name {
+  opacity: 1;
+  top: 50%;
+}
+.card__link {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in;
+  font-size: 17px;
+  opacity: 0;
+}
+.card__body:hover .card__link {
+  opacity: 1;
+}
+
+.list {
+  background-color: aliceblue;
+  padding: 15px;
+  max-width: 300px;
+}
+.list__item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  position: relative;
+  padding-left: 40px;
+  min-height: 32px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+}
+.list__item::before {
+  content: "";
+
+  background: url("../img/check.png") 0 0/ 100% no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+.list__item-checked::before {
+  background: url("../img/check-grey.png") 0 0/ 100% no-repeat;
+}
+.list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.list__item > a {
+  color: black;
+}
+
+.hand-made {
+  margin-bottom: 100px;
+  position: relative;
+}
+.hand-made__btn {
+  position: absolute;
+  top: -132px;
+  right: 50px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(145deg, #00f0ff, #0066ff);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 4px 8px rgba(0, 102, 255, 0.6), 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+.hand-made__btn:hover + .hand-made__block {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+}
+.hand-made__block {
+  position: absolute;
+  top: -222px;
+  right: 200px;
+  width: 0px;
+  height: 0px;
+  background: url("../img/image199-9.jpg") 0 0/ 100% no-repeat;
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.footer {
+  background-color: rgb(105, 107, 106);
+  text-align: center;
+}
