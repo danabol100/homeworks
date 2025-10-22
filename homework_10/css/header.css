@@ -1,7 +1,7 @@
 body {
   background-color: #262424;
 }
-a {
+.link {
   font-size: 16px;
   color: aliceblue;
   transition: color 0.3s ease;
@@ -20,15 +20,13 @@ a {
   background-color: rgb(32, 32, 39);
   box-shadow: 5px 8px 10px #000000;
   z-index: 100;
+  color: aliceblue;
 }
 
 .header__menu {
   text-align: center;
 }
 
-.menu__list {
-  font-size: 0;
-}
 .menu__item {
   text-align: left;
   position: relative;
@@ -56,6 +54,7 @@ a {
 .second-submenu__item:hover > a {
   color: yellow;
 }
+
 .submenu__link:hover,
 .second-submenu__item:hover > a {
   text-decoration: underline;
