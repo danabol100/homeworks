@@ -1,0 +1,304 @@
+.tractor {
+  position: relative;
+  background: url("../img/bg10.png") no-repeat center/cover;
+  height: 800px;
+}
+[class*="__container"] {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+.tractor__body {
+  width: 700px;
+  position: absolute;
+  top: 350px;
+  left: 530px;
+  transition: transform 0.2s ease;
+}
+.tractor__body:hover .opacity {
+  opacity: 1;
+}
+.tractor__body:hover .tractor__lamp {
+  background-color: yellow;
+  box-shadow: 1px 1px 20px yellow;
+}
+
+.tractor__top {
+  width: 223px;
+  height: 120px;
+  clip-path: polygon(0 1%, 85% 0, 100% 100%, 0% 100%);
+  background-color: #312d28;
+  position: relative;
+}
+.tractor__window-front {
+  width: 100px;
+  height: 94px;
+  background: url("../img/cat8.jpeg") no-repeat 131% / cover;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 15px;
+  left: 133px;
+  border-radius: 10px;
+  outline: 5px solid #222;
+}
+.tractor__window-front:hover .tractor__item-window {
+  transform: translate(0px, 80px);
+}
+.tractor__pillar {
+  width: 10px;
+  height: 100px;
+  background-color: #000;
+  position: absolute;
+  top: -4px;
+  left: 66px;
+  transform: rotate(345deg);
+}
+.tractor__window-side {
+  width: 100px;
+  height: 94px;
+  background: url("../img/cat10.png") no-repeat center / cover;
+  outline: 5px solid #222;
+  border-radius: 10px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.tractor__item-window {
+  width: 100px;
+  height: 94px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #7ec0ee, #e7f0f9);
+  opacity: 0.9;
+  transition: all 1s ease;
+}
+.tractor__window-side:hover .tractor__item-window {
+  transform: translate(0px, 80px);
+}
+
+.tractor__roof {
+  width: 210px;
+  height: 20px;
+  background-color: #312d28;
+  border-top-right-radius: 30px;
+  position: absolute;
+  top: -19px;
+  left: 0;
+  border-bottom: 3px solid rgb(29, 39, 26);
+}
+.tractor__hood-body {
+  width: 207px;
+  height: 150px;
+  position: absolute;
+  top: -18px;
+  left: 222px;
+}
+
+.hood__part {
+  width: 398px;
+  height: 50px;
+  position: absolute;
+  top: 95px;
+  left: 12px;
+  background-color: rgb(61 158 13);
+  border: 1px solid black;
+  transition: transform 1s ease;
+  transform-origin: bottom left;
+  border-top-right-radius: 20px;
+  transform: translate(0%, 0%) scale(0.5) rotate(348deg) skew(45deg, 372deg);
+}
+.hood__part:hover {
+  transform: translate(0%, 0%) scale(0.5) rotate(328deg) skew(45deg, 372deg);
+}
+.hood__pipe {
+  transform: translate(0%, 0%) scale(2) rotate(-352deg) skew(-41deg, -365deg);
+}
+.pipe__part1 {
+  width: 38px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: -88px;
+  left: 226px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.pipe__part2 {
+  width: 20px;
+  height: 76px;
+  background-color: black;
+  position: absolute;
+  top: -162px;
+  left: 234px;
+}
+.pipe__part3 {
+  width: 20px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  top: -186px;
+  left: 228px;
+  transform: rotate(-391deg);
+}
+.pipe__part4,
+.pipe__part5,
+.pipe__part6 {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: -214px;
+  left: 213px;
+  transform: rotate(-391deg);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  transition: all 0.4s ease;
+}
+.opacity {
+  opacity: 0;
+}
+.pipe__part5 {
+  top: -224px;
+  left: 213px;
+}
+.pipe__part6 {
+  top: -257px;
+  left: 191px;
+}
+
+.tractor__middle {
+  width: 450px;
+  height: 150px;
+  background: #000000;
+
+  background: linear-gradient(to right, #000000, #0f9b0f);
+  border-radius: 40px;
+}
+.tractor__radiator {
+  width: 140px;
+  height: 80px;
+  background-color: rgb(6, 99, 13);
+  position: absolute;
+  top: 140px;
+  left: 235px;
+}
+.radiator__item {
+  margin: 10px;
+}
+.radiator__elem {
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+.tractor__lamp {
+  width: 20px;
+  height: 30px;
+  background-color: #d2b435;
+  position: absolute;
+  top: 135px;
+  left: 432px;
+  border-top-right-radius: 10px;
+}
+
+.tractor__fender-back {
+  width: 290px;
+  height: 150px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  background-color: rgb(33, 38, 34);
+  position: absolute;
+  top: 110px;
+  left: -92px;
+  border: 1px solid #000;
+}
+.tractor__fender-front {
+  width: 210px;
+  height: 105px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  background-color: rgb(6, 99, 13);
+  position: absolute;
+  top: 183px;
+  left: 302px;
+}
+
+.tractor__wheels-back {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #3a3a3a, #1c1c1c 70%, #000);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.5);
+  border: 5px solid #111;
+  position: relative;
+  top: -147px;
+  left: -76px;
+}
+.tractor__wheels-back::after,
+.tractor__wheels-front::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff07a, #d1a600 60%, #7a5f00);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3),
+    0 0 15px rgba(0, 0, 0, 0.4);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tractor__wheels-back::before,
+.tractor__wheels-front::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff8c0, #d4b200 70%, #886600);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.3),
+    0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.tractor__wheels-front {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #000;
+  background: radial-gradient(circle at 30% 30%, #3a3a3a, #1c1c1c 70%, #000);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.5);
+  border: 5px solid #111;
+  top: 187px;
+  left: 307px;
+  transition: transform 3s ease;
+  border-radius: 50%;
+}
+.tractor__wheels-front:hover {
+  transform: rotate(7000deg);
+}
+.tractor__wheels-front::after {
+  width: 110px;
+  height: 110px;
+}
+
+.planka {
+  width: 210px;
+  height: 25px;
+  background-color: #312d28;
+  position: absolute;
+  top: 89px;
+  left: 0;
+}
