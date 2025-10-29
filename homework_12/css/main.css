@@ -1,0 +1,838 @@
+.tractor {
+  position: relative;
+  background: url("../img/bg10.png") no-repeat center/cover;
+  height: 800px;
+  overflow: hidden;
+}
+[class*="__container"] {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+.tractor__mission {
+  position: relative;
+  top: 200px;
+  left: 300px;
+  width: 700px;
+  height: 400px;
+  background: url("../img/mission.png") no-repeat center/cover;
+  opacity: 0;
+  scale: 4;
+  animation: mission 1s linear 24s forwards;
+}
+
+@keyframes mission {
+  0% {
+    scale: 4;
+    opacity: 0.5;
+  }
+  50% {
+    scale: 2;
+    opacity: 0.1;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.tractor__boom {
+  position: relative;
+  top: -200px;
+  left: 1300px;
+  width: 400px;
+  height: 400px;
+  background: url("../img/boom.png") no-repeat center/cover;
+  opacity: 0;
+  animation: boom 1s ease 19.8s forwards;
+  transform: translate(0, 0);
+}
+@keyframes boom {
+  0% {
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+    transform: translate(0, 0);
+  }
+  50% {
+    width: 800px;
+    height: 600px;
+    opacity: 1;
+    transform: translate(-1000px, 0px);
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+}
+.tractor__body {
+  width: 700px;
+  position: absolute;
+  top: 350px;
+  left: 530px;
+  transform-origin: left bottom;
+  transition: transform 0.2s ease;
+  animation: move 20s linear forwards, wheelie 2s ease-in 17.3s forwards;
+}
+@keyframes move {
+  0% {
+    left: -700px;
+  }
+  40% {
+    left: 500px;
+  }
+  90% {
+    left: 500px;
+  }
+
+  100% {
+    left: 2000px;
+  }
+}
+
+.tractor__wrapper {
+  animation: bounce 0.5s ease-in-out 0s forwards 17,
+    bounce-again 0.5s ease-in-out 16s forwards 20;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes bounce-again {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes wheelie {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+
+.tractor__top {
+  width: 223px;
+  height: 120px;
+  clip-path: polygon(0 1%, 85% 0, 100% 100%, 0% 100%);
+  background-color: #312d28;
+  position: relative;
+  animation: top 6s ease 20s forwards;
+  transform: translate(0, 0);
+}
+@keyframes top {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-1000px, -100px);
+  }
+}
+.tractor__window-front {
+  width: 100px;
+  height: 94px;
+  background: url("../img/cat8.jpeg") no-repeat 131% / cover;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 15px;
+  left: 133px;
+  border-radius: 10px;
+  outline: 5px solid #222;
+
+  transform-origin: center center;
+}
+
+.tractor__pillar {
+  width: 10px;
+  height: 100px;
+  background-color: #000;
+  position: absolute;
+  top: -4px;
+  left: 66px;
+  transform: rotate(345deg);
+}
+.tractor__window-side {
+  width: 100px;
+  height: 94px;
+  background: url("../img/cat10.png") no-repeat center / cover;
+  outline: 5px solid #222;
+  border-radius: 10px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.tractor__item-window {
+  width: 100px;
+  height: 94px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #7ec0ee, #e7f0f9);
+  opacity: 0.9;
+  transition: all 1s ease;
+  animation: window-down 8s ease-in 7.5s forwards;
+}
+@keyframes window-down {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  5% {
+    transform: translate(0px, 80px);
+  }
+  90% {
+    transform: translate(0px, 80px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.tractor__roof {
+  width: 210px;
+  height: 20px;
+  background-color: #312d28;
+  border-top-right-radius: 30px;
+  position: absolute;
+  top: -19px;
+  left: 0;
+  border-bottom: 3px solid rgb(29, 39, 26);
+}
+.tractor__hood-body {
+  width: 207px;
+  height: 150px;
+  position: absolute;
+  top: -18px;
+  left: 222px;
+}
+
+.hood__part {
+  width: 398px;
+  height: 50px;
+  position: absolute;
+  top: 95px;
+  left: 12px;
+  background-color: rgb(61 158 13);
+  border: 1px solid black;
+  transition: transform 1s ease;
+  transform-origin: bottom left;
+  border-top-right-radius: 20px;
+  transform: translate(0%, 0%) scale(0.5) rotate(348deg) skew(45deg, 372deg);
+  animation: open-hood 4s linear forwards 11s;
+}
+
+@keyframes open-hood {
+  0%,
+  10% {
+    transform: translate(0%, 0%) scale(0.5) rotate(348deg) skew(45deg, 372deg);
+  }
+  10%,
+  20% {
+    transform: translate(0%, 0%) scale(0.5) rotate(328deg) skew(45deg, 372deg);
+  }
+  20%,
+  80% {
+    transform: translate(0%, 0%) scale(0.5) rotate(328deg) skew(45deg, 372deg);
+  }
+  80%,
+  90% {
+    transform: translate(0%, 0%) scale(0.5) rotate(328deg) skew(45deg, 372deg);
+  }
+  90%,
+  100% {
+    transform: translate(0%, 0%) scale(0.5) rotate(348deg) skew(45deg, 372deg);
+  }
+}
+.hood__pipe {
+  animation: pipe 5s ease 20s forwards;
+  transform: translate(0%, 0%) scale(2) rotate(-352deg) skew(-41deg, -365deg);
+}
+
+@keyframes pipe {
+  0% {
+    transform: translate(0%, 0%) scale(2) rotate(-352deg) skew(-41deg, -365deg);
+  }
+  100% {
+    transform: translate(-1600px, -100px) scale(2) rotate(-352deg)
+      skew(-41deg, -365deg);
+  }
+}
+
+.pipe__part1 {
+  width: 38px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: -88px;
+  left: 226px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.pipe__part2 {
+  width: 20px;
+  height: 76px;
+  background-color: black;
+  position: absolute;
+  top: -162px;
+  left: 234px;
+}
+.pipe__part3 {
+  width: 20px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  top: -186px;
+  left: 228px;
+  transform: rotate(-391deg);
+}
+.pipe__part4,
+.pipe__part5,
+.pipe__part6 {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: -214px;
+  left: 213px;
+  transform: rotate(-391deg);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  transition: all 0.4s ease;
+}
+.opacity {
+  opacity: 0;
+  animation: smoke 20s linear infinite;
+}
+
+@keyframes smoke {
+  0%,
+  2%,
+  4%,
+  6%,
+  8%,
+  10%,
+  12%,
+  14%,
+  16%,
+  18%,
+  20%,
+  22%,
+  24%,
+  26%,
+  28%,
+  30%,
+  32%,
+  34%,
+  36%,
+  38%,
+  40% {
+    opacity: 1;
+  }
+  1%,
+  3%,
+  5%,
+  7%,
+  9%,
+  11%,
+  13%,
+  15%,
+  17%,
+  19%,
+  21%,
+  23%,
+  25%,
+  27%,
+  29%,
+  31%,
+  33%,
+  35%,
+  37%,
+  39% {
+    opacity: 0;
+  }
+
+  40%,
+  65% {
+    opacity: 0;
+  }
+
+  66%,
+  68%,
+  70%,
+  72%,
+  74%,
+  76%,
+  78%,
+  80%,
+  82%,
+  84%,
+  86%,
+  88%,
+  90%,
+  92%,
+  94%,
+  96%,
+  98%,
+  100% {
+    opacity: 1;
+  }
+  67%,
+  69%,
+  71%,
+  73%,
+  75%,
+  77%,
+  79%,
+  81%,
+  83%,
+  85%,
+  87%,
+  89%,
+  91%,
+  93%,
+  95%,
+  97%,
+  99% {
+    opacity: 0;
+  }
+}
+
+.pipe__part5 {
+  top: -224px;
+  left: 213px;
+}
+.pipe__part6 {
+  top: -257px;
+  left: 191px;
+}
+
+.radiator__fire {
+  width: 200px;
+  height: 200px;
+
+  position: absolute;
+  top: -80px;
+  left: -30px;
+  opacity: 0;
+  animation: fire 1s linear forwards 7s 6;
+  border: 30px;
+}
+
+@keyframes fire {
+  0%,
+  99% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.tractor__middle {
+  width: 450px;
+  height: 150px;
+  background: #000000;
+
+  background: linear-gradient(to right, #000000, #0f9b0f);
+  border-radius: 40px;
+}
+.tractor__radiator {
+  width: 140px;
+  height: 80px;
+  background-color: rgb(6, 99, 13);
+  position: absolute;
+  top: 140px;
+  left: 235px;
+  animation: radiator 6s ease 20s forwards;
+}
+@keyframes radiator {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-1100px, -150px);
+  }
+}
+.radiator__item {
+  margin: 10px;
+}
+.radiator__elem {
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+.tractor__lamp {
+  width: 20px;
+  height: 30px;
+  background-color: #d2b435;
+  position: absolute;
+  top: 135px;
+  left: 432px;
+  border-top-right-radius: 10px;
+  animation: lamp 20s ease infinite;
+}
+@keyframes lamp {
+  0%,
+  40% {
+    background-color: yellow;
+    box-shadow: 1px 1px 20px yellow;
+  }
+
+  41%,
+  65% {
+    background-color: #d2b435;
+    box-shadow: none;
+  }
+
+  66%,
+  100% {
+    background-color: yellow;
+    box-shadow: 1px 1px 20px yellow;
+  }
+}
+
+.tractor__fender-back {
+  width: 290px;
+  height: 150px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  background-color: rgb(33, 38, 34);
+  position: absolute;
+  top: 110px;
+  left: -92px;
+  border: 1px solid #000;
+}
+.tractor__fender-front {
+  width: 210px;
+  height: 105px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  background-color: rgb(6, 99, 13);
+  position: absolute;
+  top: 183px;
+  left: 302px;
+}
+
+.tractor__wheels-back {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #3a3a3a, #1c1c1c 70%, #000);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.5);
+  border: 5px solid #111;
+  position: relative;
+  top: -147px;
+  left: -76px;
+}
+.tractor__wheels-back::after,
+.tractor__wheels-front::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff07a, #d1a600 60%, #7a5f00);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3),
+    0 0 15px rgba(0, 0, 0, 0.4);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tractor__wheels-back::before,
+.tractor__wheels-front::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #333 0deg 30deg,
+    #777 30deg 60deg,
+    #333 60deg 90deg,
+    #777 90deg 120deg,
+    #333 120deg 150deg,
+    #777 150deg 180deg,
+    #333 180deg 210deg,
+    #777 210deg 240deg,
+    #333 240deg 270deg,
+    #777 270deg 300deg,
+    #333 300deg 330deg,
+    #777 330deg 360deg
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.3),
+    0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.tractor__wheels-front {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #000;
+  background: radial-gradient(circle at 30% 30%, #3a3a3a, #1c1c1c 70%, #000);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.5);
+  border: 5px solid #111;
+  top: 187px;
+  left: 307px;
+  transition: transform 3s ease;
+  border-radius: 50%;
+}
+
+.tractor__wheels-front::after {
+  width: 110px;
+  height: 110px;
+}
+.wheel-elem {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+
+  background-color: #0e0e0e;
+  z-index: 5;
+  border-radius: 50%;
+}
+
+.wheels {
+  animation: wheelRotate 20s linear infinite;
+  transform-origin: center;
+}
+@keyframes wheelRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(720deg);
+  }
+
+  88% {
+    transform: rotate(720deg);
+  }
+
+  100% {
+    transform: rotate(1440deg);
+  }
+}
+
+.planka {
+  width: 210px;
+  height: 25px;
+  background-color: #312d28;
+  position: absolute;
+  top: 89px;
+  left: 0;
+}
+
+.tractor__mechanic {
+  position: absolute;
+  top: 600px;
+  left: 1300px;
+  animation: move-mechanic 8s linear forwards 9s;
+  transform: translate(0, 0);
+  transform: rotate(0deg);
+  opacity: 0;
+  z-index: 50;
+}
+@keyframes move-mechanic {
+  0%,
+  10% {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  10%,
+  25% {
+    transform: translate(-450px, 0px) rotate(0deg);
+    opacity: 1;
+  }
+  25%,
+  35% {
+    transform: translate(-450px, -240px) rotate(0deg);
+    opacity: 1;
+  }
+
+  35%,
+  37% {
+    transform: translate(-450px, -240px) rotate(0deg);
+    opacity: 1;
+  }
+  37%,
+  39% {
+    transform: translate(-450px, -240px) rotate(-20deg);
+    opacity: 1;
+  }
+
+  39%,
+  41% {
+    transform: translate(-450px, -240px) rotate(20deg);
+    opacity: 1;
+  }
+
+  41%,
+  43% {
+    transform: translate(-450px, -240px) rotate(-20deg);
+    opacity: 1;
+  }
+  43%,
+  45% {
+    transform: translate(-450px, -240px) rotate(20deg);
+    opacity: 1;
+  }
+  45%,
+  47% {
+    transform: translate(-450px, -240px) rotate(-20deg);
+    opacity: 1;
+  }
+  47%,
+  49% {
+    transform: translate(-450px, -240px) rotate(20deg);
+    opacity: 1;
+  }
+  49%,
+  51% {
+    transform: translate(-450px, -240px) rotate(-20deg);
+    opacity: 1;
+  }
+  51%,
+  53% {
+    transform: translate(-450px, -240px) rotate(20deg);
+    opacity: 1;
+  }
+  53%,
+  55% {
+    transform: translate(-450px, -240px) rotate(-20deg);
+    opacity: 1;
+  }
+
+  75%,
+  90% {
+    transform: translate(-450px, -240px) rotate(-20deg);
+
+    opacity: 1;
+  }
+  90%,
+  95% {
+    transform: translate(-450px, 0px) rotate(-20deg);
+
+    opacity: 1;
+  }
+  95%,
+  100% {
+    transform: translate(0px, 0px) rotate(-20deg);
+    opacity: 0;
+  }
+}
+
+.tractor__ladder {
+  position: absolute;
+  top: 500px;
+  left: 1200px;
+
+  width: 250px;
+  height: 250px;
+  animation: ladder 7.8s linear forwards 9.3s;
+  opacity: 0;
+}
+
+.tractor__item-ladder-1 {
+  position: absolute;
+
+  bottom: 0px;
+  right: 150px;
+  width: 10px;
+  height: 250px;
+  background-color: #3a3a3a;
+}
+.tractor__item-ladder-2 {
+  position: absolute;
+
+  bottom: 0px;
+  right: 50px;
+  width: 10px;
+  height: 250px;
+  background-color: #3a3a3a;
+}
+.vertic {
+  position: absolute;
+
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 10px;
+  background-color: #3a3a3a;
+}
+.tractor__item-ladder-4 {
+  bottom: 90px;
+}
+.tractor__item-ladder-5 {
+  bottom: 130px;
+}
+.tractor__item-ladder-6 {
+  bottom: 170px;
+}
+.tractor__item-ladder-7 {
+  bottom: 200px;
+}
+@keyframes ladder {
+  0%,
+  6% {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  6%,
+  12% {
+    visibility: visible;
+    transform: translate(-400px, 0px);
+    opacity: 1;
+  }
+  90%,
+  95% {
+    visibility: visible;
+    transform: translate(-400px, 0px);
+    opacity: 1;
+  }
+  95% {
+    transform: translate(0px, 0px);
+    opacity: 0;
+  }
+}

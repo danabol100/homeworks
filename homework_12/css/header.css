@@ -1,0 +1,19 @@
+.header {
+  background-color: rgb(24, 202, 247);
+
+  border-bottom: 5px solid #3a1a46;
+}
+
+.header__title {
+  font-size: 30px;
+  color: aliceblue;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer {
+  background-color: rgb(127, 145, 150);
+  text-align: center;
+  padding: 50px 0;
+  color: aliceblue;
+}
