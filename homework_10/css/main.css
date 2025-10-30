@@ -1,4 +1,4 @@
-.card {
+.card-section {
   background-color: #ffffff;
   font-family: "Playfair Display", sans-serif;
   padding: 50px 0 50px 0;
@@ -6,24 +6,21 @@
   color: #000000;
   text-align: center;
 }
-.card__wrapper {
-  margin-bottom: 77px;
-  font-size: 0;
+.card-section__wrapper {
+  padding-bottom: 77px;
 }
-.card__title {
+.card-section__title {
   margin-bottom: 50px;
   font-size: 27px;
 }
-.card__body {
+.card-section__item {
   display: inline-block;
   position: relative;
   overflow: hidden;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  /* max-width: 251px; */
-  max-width: 25.066%;
-  font-size: 0;
+  max-width: 23%;
 }
-.card__body::before {
+.card-section__item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -34,16 +31,17 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
   opacity: 0;
 }
-.card__body:hover::before {
+.card-section__item:hover::before {
   opacity: 1;
 }
-.card__body:not(:last-child) {
+.card-section__item:not(:last-child) {
   /* margin-right: 123px; */
-  margin-right: 12.4%;
+  margin-right: 8%;
 }
-.card__name {
+.card-section__name {
   position: absolute;
-  white-space: nowrap;
+  width: 100%;
+  padding: 10px 0;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -54,12 +52,12 @@
   opacity: 0;
   transition: all 0.3s ease-in;
 }
-.card__body:hover .card__name {
+.card-section__item:hover .card-section__name {
   opacity: 1;
   top: 50%;
 }
 
-.card__link {
+.card-section__link {
   position: absolute;
   top: 90%;
   left: 50%;
@@ -68,18 +66,22 @@
   font-size: 17px;
   opacity: 0;
 }
-.card__body:hover .card__link {
+.card-section__item:hover .card-section__link {
   opacity: 1;
 }
-.card_btn {
+.card-section__wrapper-btn {
+  text-align: center;
+}
+.card-section__btn {
   display: inline-block;
-  width: 133px;
-  height: 40px;
-  line-height: 40px;
+  max-width: 134px;
+  width: 100%;
+  padding: 10px 15px;
+
   border: 1px solid #000000;
   transition: all 0.3s ease;
 }
-.card_btn:hover {
+.card-section__btn:hover {
   background-color: rgb(38, 36, 36);
   color: #ffffff;
 }
