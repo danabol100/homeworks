@@ -1,0 +1,145 @@
+body {
+  font-family: "Lato", serif;
+  color: #2f302c;
+  line-height: 1.25;
+}
+
+[class*="__container"] {
+  max-width: 1392px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  background-color: black;
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 50px;
+}
+
+.register__header {
+  text-align: center;
+  margin-bottom: 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+}
+.register__text {
+  color: #7e7f7c;
+}
+.auth-section {
+  padding: 82px 0;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.auth-section__content {
+  flex: 0 1 712px;
+}
+.auth-section__header {
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.auth-section__text {
+  color: #7e7f7c;
+}
+.auth-section__text a {
+  color: #2f302c;
+  font-weight: 700;
+}
+.auth-section__text:hover a {
+  text-decoration: underline;
+}
+.form {
+  position: relative;
+}
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 72px;
+}
+.form__input-wrapper {
+  display: flex;
+  gap: 40px;
+}
+.form__label {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.form__input {
+  font-size: 16px;
+  height: 44px;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 0 10px;
+}
+.form__input::placeholder {
+  font-size: 16px;
+  color: #7e7f7c;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(93, 93, 99, 0.5);
+}
+.form__button {
+  max-width: 336px;
+  padding: 12px 5px;
+  width: 100%;
+  background-color: #2f302c;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+.form__button:hover {
+  background-color: black;
+}
+.auth-section__banner {
+  flex: 0 1 600px;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  min-height: 496px;
+  overflow: hidden;
+}
+.auth-section__banner img {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  max-width: 100%;
+  z-index: 0;
+  object-fit: cover;
+  display: flex;
+}
+.auth-section__text-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.auth-section__text-banner p {
+  flex: none;
+  margin: 0;
+  background-color: #ce0000;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500px;
+}

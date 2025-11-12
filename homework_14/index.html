@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework 14</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <p>Header</p>
+        </div>
+    </header>
+    <main class="main">
+        <section class="register">
+            <div class="register__container">
+                <div class="register__header">
+                    <h2 class="register__title title">REGISTER TO FURNITUR</h2>
+                    <div class="register__text">
+                        <p>GET MONTHLY VOUCHER WITH JUST ONE CLICK!</p>
+                    </div>
+                </div>
+                <div class="auth-section">
+                    <div class="auth-section__content">
+                        <div class="auth-section__header">
+                            <div class="auth-section__title title">YOUR INFORMATION</div>
+                            <div class="auth-section__text">You already have an account? <a href="#">Sign in here</a>
+                            </div>
+                        </div>
+                        <form action="#" method="post" class="form">
+                            <div class="form__wrapper">
+                                <div class="form__input-wrapper">
+                                    <label for="name" class="form__label"></label>
+                                    <input class="form__input" id="name" type="text" name="form[]"
+                                        placeholder="Your name" required autocomplete="name">
+                                    <label for="email" class="form__label"></label>
+                                    <input class="form__input" id="email" type="email" name="form[]"
+                                        placeholder="E-mail" required autocomplete="email">
+                                </div>
+
+                                <div class="">
+                                    <label for="tel" class="form__label"></label>
+                                    <input class="form__input" id="tel" type="tel" required autocomplete="tel"
+                                        name="form[]" placeholder="Phone number">
+                                </div>
+                                <div class="form__input-wrapper">
+                                    <label for="password" class="form__label"></label>
+                                    <input class="form__input" id="password" type="password" required
+                                        placeholder="Password" name="form[]">
+                                    <label for="reset-password" class="form__label"></label>
+                                    <input class="form__input" id="reset-password" type="password" required
+                                        placeholder="Reset Password" name="form[]">
+                                </div>
+                            </div>
+                            <button class="form__button" type="submit">Create an account</button>
+                        </form>
+                    </div>
+                    <div class="auth-section__banner">
+                        <img src="img/banner.png" alt="Discount for new members">
+                        <div class="auth-section__text-banner">
+                            <p class="auth-section__badge ">HOT</p>
+                            <h3 class="title">DISCOUNT <br>25% FOR <br>NEW <br>MEMBER</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
