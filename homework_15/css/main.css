@@ -116,6 +116,7 @@ main {
   padding-top: 114px;
   padding-bottom: 110px;
   background-size: cover;
+  margin-bottom: 50px;
 }
 .section-hero__container {
   display: flex;
