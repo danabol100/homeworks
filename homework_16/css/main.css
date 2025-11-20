@@ -14,8 +14,7 @@ main {
 .wrapper {
   position: relative;
   min-height: 100%;
-  overflow: clip;
-
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
@@ -108,10 +107,7 @@ main {
 
 /* Main*/
 .section-hero {
-  /* height: 100%; */
   position: relative;
-
-  min-height: 622px;
 }
 
 .section-hero__content {
@@ -121,7 +117,7 @@ main {
 }
 
 .section-hero__banner {
-  max-width: 1920px;
+  max-width: 1922px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -171,6 +167,16 @@ main {
   line-height: 1.25;
 
   color: #7e7f7c;
+}
+
+.footer {
+  background-color: black;
+  color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+}
+.footer p {
+  padding: 10px;
 }
 
 @media (width <= 1422px) {
@@ -233,7 +239,6 @@ main {
     padding-top: 80px;
   }
   .section-hero__banner {
-    left: 57%;
     max-height: 422px;
   }
   .section-hero__subtitle {
@@ -360,7 +365,7 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 100vh;
+    min-height: 422px;
   }
   .section-hero__title {
     font-size: 80px;
