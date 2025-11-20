@@ -36,3 +36,6 @@ h6 {
 input {
   width: 100%;
 }
+button {
+  background: none;
+}
