@@ -14,7 +14,7 @@ main {
 .wrapper {
   position: relative;
   min-height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
