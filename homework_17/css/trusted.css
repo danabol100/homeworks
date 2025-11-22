@@ -3,6 +3,9 @@
 }
 
 .section-trusted__title {
+  margin-bottom: 72px;
+}
+.title {
   font-size: 32px;
   font-weight: 800;
   text-align: center;
@@ -15,7 +18,9 @@
   margin: 0 auto;
   justify-content: center;
 }
-.section-trusted__item {
+.section-trusted__item img {
+  width: 100%;
+  object-fit: cover;
 }
 @media (width < 1422px) {
   .section-trusted__list {
