@@ -1,6 +1,5 @@
 .section-featured {
   color: #2f302c;
-  margin-bottom: 82px;
 }
 .section-featured__container {
 }
@@ -14,20 +13,22 @@
 }
 .featured-menu {
 }
-
-/*Так і не зрозумів як це зробіти адаптивно грідом і по макету одночасно */
 .featured-menu__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(125px, max-content));
+  /* display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 48px;
   justify-content: center;
-  gap: 20px 48px;
-
-  max-width: 700px;
-  margin: 0 auto;
-  font-weight: 700;
+  font-weight: 700; */
+  display: grid;
+  /* grid-auto-flow: column;
+  grid-auto-columns: max-content; */
+  gap: 48px;
+  justify-content: center;
+  /* grid-template-rows: repeat(auto-fill, auto); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
 }
 .featured-menu__item {
-  text-align: center;
 }
 .featured-menu__link {
   position: relative;
@@ -107,9 +108,6 @@
     grid-template-columns: repeat(2, minmax(155px, 1fr));
     gap: 15px;
   }
-  .section-featured__header {
-    margin-bottom: 62px;
-  }
 }
 
 @media (max-width: 545px) {
@@ -117,19 +115,10 @@
     gap: 10px;
   }
   .featured-menu__list {
-    gap: 20px 26px;
-  }
-  .section-featured__header {
-    margin-bottom: 52px;
-  }
-  .featured-menu__list {
-    max-width: 350px;
+    gap: 26px;
   }
 }
 @media (max-width: 460px) {
-  .section-featured__header {
-    margin-bottom: 42px;
-  }
   .featured-menu__list {
     gap: 15px;
     font-size: 14px;
