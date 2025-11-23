@@ -135,12 +135,6 @@ main {
     flex-basis: 190px;
   }
 }
-@media (max-width: 1100px) {
-  /*PRODUCT*/
-  .section-products__list {
-    gap: 15px;
-  }
-}
 
 @media (width <= 992px) {
   .header__container {
@@ -157,12 +151,7 @@ main {
     overflow: hidden;
   }
 }
-@media (max-width: 885px) {
-  /*PRODUCT*/
-  .product-card {
-    min-height: 544px;
-  }
-}
+
 @media (width <= 820px) {
   .section-hero__text-content {
     max-width: 370px;
