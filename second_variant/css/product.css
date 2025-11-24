@@ -46,6 +46,10 @@
   align-items: center;
   text-align: center;
   gap: 96px;
+  padding-bottom: clamp(24px, 3vw, 50px);
+  padding-top: clamp(18px, 3vw, 48px);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .product-card--right {
   display: flex;
@@ -63,6 +67,7 @@
 .product-card__image-lamp2 img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
 }
 .product-card__image-lamp2 {
   max-width: 121px;
@@ -70,11 +75,9 @@
 }
 .product-card__image-sofa {
   aspect-ratio: 529 / 218;
-  /* padding-bottom: 51px; */
+
   max-width: 529px;
   overflow: hidden;
-  padding-bottom: clamp(24px, 3vw, 50px);
-  margin-top: auto;
 }
 .product-card__image-sofa img {
   width: 100%;
@@ -91,16 +94,12 @@
   height: 100%;
   object-fit: cover;
 }
-.product-card__content {
-  /* margin-top: clamp(24px, 4vw, 48px); */
 
-  /* margin-bottom: clamp(32px, 4vw, 64px); */
-}
 .product-card__content--right {
   padding-top: clamp(18px, 3vw, 48px);
   padding-left: clamp(16px, 2vw, 32px);
   padding-right: clamp(24px, 3vw, 50px);
-  margin-bottom: auto;
+  flex-grow: 1;
 }
 .product-card__content--left {
   padding-bottom: clamp(32px, 4vw, 64px);
@@ -108,9 +107,9 @@
   padding-right: clamp(24px, 3vw, 50px);
 }
 .product-card__content--center {
-  margin-bottom: auto;
+  flex-grow: 1;
+
   max-width: 310px;
-  padding-top: clamp(18px, 3vw, 48px);
 }
 .product-card__title {
   color: #2f302c;
@@ -153,7 +152,6 @@
 }
 @media (max-width: 885px) {
   .product-card--center {
-    padding: 0 30px;
   }
   .product-card {
     min-height: 440px;
@@ -174,7 +172,6 @@
     margin: 0 auto;
     display: grid;
     gap: 15px;
-    /* max-width: 678px; */
 
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
