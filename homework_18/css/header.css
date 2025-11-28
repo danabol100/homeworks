@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  color: #343434;
 }
 main {
   flex: 1;
@@ -18,6 +19,7 @@ main {
 }
 .header {
   color: #343434;
+  margin-bottom: 70px;
 }
 .header__container {
   display: flex;
@@ -58,7 +60,7 @@ main {
   padding: 10px 47px;
   font-size: 17px;
   color: #ffffff;
-  font-size: medium;
+  font-weight: 500;
   border-radius: 12px;
   transition: all 0.3s ease;
 }
