@@ -1,10 +1,18 @@
 .yoga-info {
   margin-bottom: 136px;
 }
+
 .yoga-info__container {
   display: flex;
   gap: 138px;
   flex-direction: column;
+  position: relative;
+}
+.flower2 {
+  position: absolute;
+  top: 220px;
+  left: -180px;
+  z-index: -1;
 }
 .yoga-info__card {
   display: flex;
@@ -23,7 +31,7 @@
   font-size: 50px;
   margin-bottom: 70px;
 }
-.info-title {
+.title {
   font-family: "Lora", serif;
   color: #ba936f;
   text-transform: uppercase;
@@ -36,7 +44,7 @@
 }
 
 .card-info__link {
-  padding-left: 96px;
+  padding-left: 60px;
   position: relative;
   transition: transform 0.2s;
   display: inline-block;
@@ -49,7 +57,7 @@
   content: "";
   position: absolute;
   top: -40px;
-  left: 34px;
+  left: 0px;
   background: url("../img/circle.svg") left no-repeat;
   width: 100px;
   height: 100px;
@@ -134,7 +142,7 @@
   object-fit: cover;
 }
 
-@media (width< 1200px) {
+@media (max-width: 1200px) {
   .yoga-info__container {
     gap: 100px;
   }
@@ -156,6 +164,9 @@
   }
 }
 @media (max-width: 768px) {
+  .yoga-info {
+    margin-bottom: 70px;
+  }
   .yoga-info__card {
     display: flex;
     gap: 20px;

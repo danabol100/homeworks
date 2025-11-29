@@ -17,11 +17,19 @@ main {
   display: flex;
   flex-direction: column;
 }
+.flower-decor-1 {
+  position: absolute;
+  top: -17px;
+  right: -180px;
+  z-index: -1;
+}
+
 .header {
   color: #343434;
   margin-bottom: 70px;
 }
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 108px;
@@ -55,7 +63,7 @@ main {
 .menu__link {
 }
 
-.sing-up__btn {
+.sing-up-btn {
   background-color: #ba936f;
   padding: 10px 47px;
   font-size: 17px;
@@ -64,7 +72,7 @@ main {
   border-radius: 12px;
   transition: all 0.3s ease;
 }
-.sing-up__btn:hover {
+.sing-up-btn:hover {
   background-color: #e48b37;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
@@ -85,7 +93,7 @@ main {
   }
 }
 @media (width<1000px) {
-  .sing-up__btn {
+  .sing-up-btn {
     padding: 10px 20px;
   }
 }
@@ -160,7 +168,7 @@ main {
     font-size: 25px;
     align-items: center;
   }
-  .sing-up__btn {
+  .sing-up-btn {
     padding: 10px 47px;
   }
   [data-menu-open] .icon-menu span {
