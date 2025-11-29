@@ -177,6 +177,10 @@
     max-width: 600px;
     aspect-ratio: 600 / 647;
     width: 100%;
+    min-width: 290px;
+  }
+  .card-info-reverse__img {
+    min-width: 290px;
   }
   .card-info__text {
     max-width: 560px;

@@ -81,9 +81,24 @@ main {
   display: none;
 }
 
+.footer {
+  background-color: #2f302c;
+  text-align: center;
+  color: #fff;
+}
+.footer__container {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__container p {
+  align-items: center;
+}
+
 @media (width<1200px) {
   .header__container {
-    min-height: 80px;
+    min-height: 100px;
   }
   .menu {
     gap: 80px;
@@ -103,6 +118,9 @@ main {
   }
 }
 @media (max-width: 768px) {
+  .header {
+    margin-bottom: 30px;
+  }
   .header__logo {
     margin: 0 auto;
   }

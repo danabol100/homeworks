@@ -60,6 +60,7 @@
 
 .card-lessons__title {
   text-transform: capitalize;
+  padding-left: 15px;
 }
 .card-lessons__img-center {
 }
@@ -99,6 +100,7 @@
 
   .card-lessons__title {
     text-align: center;
+    padding-left: 0;
   }
   @media (max-width: 515px) {
     .lessons__card {
