@@ -1,7 +1,5 @@
 body {
   font-family: "Lato", sans-serif;
-  display: flex;
-  flex-direction: column;
 }
 main {
   flex: 1;
@@ -14,7 +12,8 @@ main {
 .wrapper {
   position: relative;
   min-height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  overflow-x: clip;
   display: flex;
   flex-direction: column;
 }
