@@ -65,6 +65,11 @@
   aspect-ratio: 503 / 602;
   min-width: 350px;
 }
+.schedule__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (max-width: 1200px) {
   .schedule__table {
@@ -97,6 +102,10 @@
   .schedule__table td {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .schedule__img {
+    max-width: 703px;
+    width: 100%;
   }
 }
 @media (max-width: 700px) {
