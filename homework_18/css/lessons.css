@@ -57,17 +57,14 @@
 }
 .lessons__card:nth-of-type(1) .card-lessons__img {
   aspect-ratio: 385 / 477;
-  max-width: 385px;
 }
 
 .lessons__card:nth-of-type(2) .card-lessons__img {
   aspect-ratio: 1 / 1;
-  max-width: 368px;
 }
 
 .lessons__card:nth-of-type(3) .card-lessons__img {
   aspect-ratio: 362 / 477;
-  max-width: 362px;
 }
 .card-lessons__img img {
   object-fit: cover;
