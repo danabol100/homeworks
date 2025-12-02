@@ -56,6 +56,10 @@
   display: inline-flex;
   align-items: flex-start;
   gap: 1px;
+  transition: all 0.3s;
+}
+.schedule__table td a:hover {
+  color: #ba936f;
 }
 .icon-arrow-up {
 }
