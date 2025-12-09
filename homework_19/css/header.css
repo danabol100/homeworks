@@ -67,21 +67,6 @@ main {
   display: none;
 }
 
-.footer {
-  background-color: #2f302c;
-  text-align: center;
-  color: #fff;
-}
-.footer__container {
-  min-height: 6.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer__container p {
-  align-items: center;
-}
-
 @media (max-width: 40em) {
   .icon-menu {
     display: block;
