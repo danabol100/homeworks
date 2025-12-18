@@ -1,9 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Playfair", serif;
   color: #000000;
 }
 main {
   flex: 1;
+}
+
+section[id] {
+  scroll-margin-top: clamp(3.75rem, 3.286vw + 2.386rem, 5.9375rem);
 }
 [class*="__container"] {
   max-inline-size: 60.125rem;
@@ -15,13 +23,17 @@ main {
   position: relative;
 }
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
-  color: #ffffff;
 
+  color: #ffffff;
+  background-color: transparent;
   width: 100%;
   z-index: 10;
+}
+.header.header--scroll-state {
+  background-color: rgb(18, 18, 18);
+  opacity: 0.9;
 }
 .header__container {
   display: flex;
