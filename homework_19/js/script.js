@@ -8,13 +8,14 @@ function documentActions(e) {
   if (targetElement.closest(".icon-menu")) {
     document.documentElement.toggleAttribute("data-menu-open");
   }
+  if (targetElement.closest(".menu__item")) {
+    document.documentElement.removeAttribute("data-menu-open");
+  }
 }
-// Отримуємо елемент шапки
+
 const header = document.querySelector(".header");
 
-// Слухаємо подію scroll
 window.addEventListener("scroll", () => {
-  // якщо проскролено більше 0 пікселів додається клас модифікатор header--scroll-state
   if (window.scrollY > 0) {
     header.classList.add("header--scroll-state");
   } else {
